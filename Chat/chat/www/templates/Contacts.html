@@ -1,0 +1,19 @@
+<ion-view ng-controller="ContactCtrl">
+ 
+ 
+<ion-content class="has-header">
+<div class="list" >
+
+    <a class="item item-avatar" href="#UserMessages" ng-repeat="message in messages1 " class="item-text-wrap" ng-click="userID(message)">
+      <img src="{{message.pic}}">
+      <p >{{message.username}}<p>
+      <p ng-model="id" ng-hide="true" >{{message.userId}}<p>
+      <span am-time-ago="message.dateTimeMessage" style="position:absolute;right:30px"></span>
+      <p >{{message.messageText}}</p>
+    </a>
+
+  
+
+</div>
+</ion-content>
+</ion-view>

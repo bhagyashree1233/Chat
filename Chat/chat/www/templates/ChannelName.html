@@ -1,0 +1,11 @@
+<ion-view ng-controller="ChannelNameCtrl">
+<ion-content >
+<div class="list" >
+  <a class="item item-thumbnail-left"  ng-repeat="x in channelName">
+    <p>{{x.name}}</p>
+    <img src="{{x.avatar}}"/>
+    <p>{{x.userId}}</p>
+  </a> 
+</div>
+</ion-content>
+</ion-view>

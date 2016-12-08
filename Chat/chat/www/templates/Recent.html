@@ -1,0 +1,9 @@
+<ion-view>
+<ion-content ng-controller="RecentCtrl">
+<ion-list href="#ChannelName">
+<ion-item ng-repeat="(key, value) in myData">
+  <p ng-click="getChannels(value)">{{key}}</p>
+ </ion-item> 
+</ion-list>
+</ion-content>
+</ion-view>
